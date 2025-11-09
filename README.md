@@ -30,7 +30,9 @@ This project demonstrates a manual implementation of the **CQRS (Command Query R
    git clone https://github.com/DargahiLeila/AspNetCore-CQRS-NoMediatR
 2.Open the solution file (.sln) in Visual Studio 2022 or later.
 3.Make sure your SQL Server instance is running.
+
 4.Create a SQL Server database manually named db_UnitTest.
+
 5.Create the required table using the following SQL script:
 
 CREATE TABLE [dbo].[Tbl_User] (
@@ -38,6 +40,7 @@ CREATE TABLE [dbo].[Tbl_User] (
     [Name] NVARCHAR(50),
     [IsDeleted] BIT NOT NULL
 );
+
 
 6.Update the connection string in appsettings.json to match your SQL Server configuration. The default connection string used in this project is:
 
