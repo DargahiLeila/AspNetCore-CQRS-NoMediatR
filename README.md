@@ -29,6 +29,7 @@ This project demonstrates a manual implementation of the **CQRS (Command Query R
    ```bash
    git clone https://github.com/DargahiLeila/AspNetCore-CQRS-NoMediatR
 2.Open the solution file (.sln) in Visual Studio 2022 or later.
+
 3.Make sure your SQL Server instance is running.
 
 4.Create a SQL Server database manually named db_UnitTest.
