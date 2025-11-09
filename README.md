@@ -32,17 +32,19 @@ This project demonstrates a manual implementation of the **CQRS (Command Query R
 3.Make sure your SQL Server instance is running.
 4.Create a SQL Server database manually named db_UnitTest.
 5.Create the required table using the following SQL script:
-CREATE TABLE [dbo].[User] (
+
+CREATE TABLE [dbo].[Tbl_User] (
     [Id] INT PRIMARY KEY IDENTITY(1,1),
     [Name] NVARCHAR(50),
     [IsDeleted] BIT NOT NULL
 );
 
 6.Update the connection string in appsettings.json to match your SQL Server configuration. The default connection string used in this project is:
-"ConnectionStrings": {
+
   "UnitTestConnectionString": "Data Source=Your-ServerName;Initial Catalog=db_UnitTest;TrustServerCertificate=True;User Id=*;Password=*;"
-}
+
 ⚠️ Note: Replace Data Source, User Id, and Password with your own SQL Server credentials if different.
+
 7.Run the project:
 
 Press Ctrl + F5 or click Start Without Debugging
